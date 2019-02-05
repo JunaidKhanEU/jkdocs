@@ -1,0 +1,14 @@
+<div style="dsiplay:flex">
+
+    <div style="color:{{include.color}}; display:inline-block;
+    font-size:30px; margin: 10px 10%;">{{site.title}}</div>
+
+
+    {% for page in site.pages %}
+    <a style=" display:inline-block;
+    font-size:30px; " href="{{page.url}}">{{page.title}}</a>
+    {% endfor %}
+
+</div>
+
+<hr><br>
